@@ -32,6 +32,18 @@ namespace HashTableDictionary
             dictionary.Add("Icama", 0);
             dictionary.Add("Iguana", -1);
             //dictionary.Add(1, -2); //not allowed
+
+            /*  Hashtable
+             *  1.Return null if you try to access a key which does not exist.
+             *  2.Slower than dictionary because it requires boxing and unboxing
+             *  3.Non-generic
+             */ 
+
+            /*  Dictionary
+             *  1. return error for the same situation
+             *  2. Faster than hashtable, no boxing, unboxing behind the scene.
+             *  3. Generic
+             */
         }
     }
 }
