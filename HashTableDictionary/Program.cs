@@ -94,7 +94,20 @@ namespace HashTableDictionary
                 Console.WriteLine("{0} {1}", myNewPair.Key, myNewPair.Value);
             }
 
-            //
+            //Part 4
+            Dictionary<string, string> names = new Dictionary<string, string>();
+            names.Add("Li", "Xu");
+            names.Add("Petros", "Passass");
+            names.Add("iLia", "Nika");
+            string test;
+            if (names.TryGetValue("Petros", out test)) //TryGetValue method> powerful
+            {
+                Console.WriteLine(test);
+            }
+            if (names.TryGetValue("Jhon", out test))
+            {
+                Console.WriteLine(test);
+            }
         }
     }
 }
