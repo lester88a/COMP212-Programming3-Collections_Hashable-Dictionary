@@ -74,9 +74,27 @@ namespace HashTableDictionary
 
             Console.WriteLine(objHashTable["Li Xu"].ToString());
             Console.WriteLine(objHashTable[1].ToString());
-            Console.ReadKey();
 
-            //Hashtable example part 1
+            //Dictionary example part 1
+            Dictionary<string, int> myOldOne = new Dictionary<string, int>()
+            {
+                {"Li",100},
+                {"Jhon",200},
+                {"Ilya",300},
+                {"Xu",400}
+            };
+            //this one is efficient
+            foreach (KeyValuePair<string,int> myPair in myOldOne)
+            {
+                Console.WriteLine("{0},{1}", myPair.Key, myPair.Value);
+            }
+            //this one is not efficient
+            foreach (var myNewPair in myOldOne)
+            {
+                Console.WriteLine("{0} {1}", myNewPair.Key, myNewPair.Value);
+            }
+
+            //
         }
     }
 }
