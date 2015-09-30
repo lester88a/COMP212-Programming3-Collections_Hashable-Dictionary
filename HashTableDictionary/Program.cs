@@ -56,17 +56,27 @@ namespace HashTableDictionary
             dictionaries.Add(3, "Ten");
             for (int i = 0; i < dictionaries.Count; i++)
             {
-                Console.WriteLine(dictionaries[i]);//output> Error due to dictionaries[0] cannot empty
+               // Console.WriteLine(dictionaries[i]);//output> Error due to dictionaries[0] cannot empty
             }
-
             //Searching for a key
+
             if (dictionary.ContainsKey("Cat")==true)
             {
                 //doing something
             }
 
             //Hashtable example part 1
+            Hashtable objHashTable = new Hashtable();
+            objHashTable.Add(1, 100);
+            objHashTable.Add(2.9, 200);
+            objHashTable.Add("A", 300);
+            objHashTable.Add("Li Xu", 500);
 
+            Console.WriteLine(objHashTable["Li Xu"].ToString());
+            Console.WriteLine(objHashTable[1].ToString());
+            Console.ReadKey();
+
+            //Hashtable example part 1
         }
     }
 }
